@@ -242,3 +242,6 @@ img{max-width:100%}
     #lg-refresh .lg-device-section:before{content:"";position:absolute;left:-210px;bottom:-225px;width:420px;height:420px;border:1px solid #dfd5ef;border-radius:50%;pointer-events:none}
     #lg-refresh .lg-device-section:after{content:"";position:absolute;right:-255px;top:-255px;width:490px;height:490px;border:1px solid #e0ebe5;border-radius:50%;pointer-events:none}
     #lg-refresh .lg-device-inner{position:relative;z-index:1}
+
+#lg-refresh .lg-soon{text-decoration:none;cursor:pointer}
+#lg-refresh .lg-soon:hover{transform:translateY(-2px);box-shadow:0 16px 32px #150b2c80}
