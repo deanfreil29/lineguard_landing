@@ -1,24 +1,19 @@
-LINEGUARD /START PAGE — GITHUB DEPLOYMENT
+UPDATED LINEGUARD START PAGE
 
-1. In your existing lineguard_landing GitHub repository, create a folder named:
-   start
+Upload/replace the entire `start` folder in your GitHub repository.
 
-2. Put this file inside it:
-   start/index.html
+Expected structure:
 
-3. Commit to the main branch. Cloudflare Pages should deploy automatically.
+start/
+  index.html
+  assets/
+    lineguard-mascot.png
+    lineguard-wordmark.png
 
-4. After deployment, verify:
-   https://lineguardapp.com/start/
+The top-left header now uses the actual LineGuard mascot + LineGuard wordmark
+rather than the generic placeholder shield.
 
-5. The permanent QR code in this package points to:
-   https://lineguardapp.com/start/?src=care-package
+The page remains available at:
+https://lineguardapp.com/start/
 
-The ?src=care-package query string lets you distinguish package scans later if you add analytics.
-The printed QR never needs to change as long as you keep /start/ available.
-
-Current App Store destination:
-https://apps.apple.com/us/app/lineguard-plus/id6782687697
-
-Contact used on page:
-hello@lineguardapp.com
+The QR code you already printed/generated does NOT need to change.
