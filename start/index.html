@@ -52,22 +52,25 @@
     .brand{
       display:flex;
       align-items:center;
-      gap:10px;
+      gap:12px;
       text-decoration:none;
     }
 
-    .brand-mascot{
-      width:44px;
-      height:44px;
+    .brand-logo{
+      width:52px;
+      height:52px;
       object-fit:contain;
       display:block;
       flex:0 0 auto;
     }
 
-    .brand-wordmark{
-      width:150px;
-      height:auto;
+    .brand-name{
       display:block;
+      font-size:30px;
+      font-weight:800;
+      letter-spacing:-.04em;
+      line-height:1;
+      color:var(--purple-dark);
     }
 
     .home{
@@ -239,8 +242,8 @@
   <main class="wrap">
     <div class="top">
       <a class="brand" href="/" aria-label="LineGuard home">
-        <img class="brand-mascot" src="assets/lineguard-mascot.png" alt="">
-        <img class="brand-wordmark" src="assets/lineguard-wordmark.png" alt="LineGuard">
+        <img class="brand-logo" src="assets/lineguard-logo.png" alt="LineGuard logo">
+        <span class="brand-name">LineGuard</span>
       </a>
 
       <a class="home" href="/">lineguardapp.com</a>
