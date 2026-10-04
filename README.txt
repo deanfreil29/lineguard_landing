@@ -1,17 +1,16 @@
-LINEGUARD — TRANSCENDENCE VENTURES LLC WEBSITE UPDATE
+LINEGUARD SITE RESTORE
 
-Replace these files in the existing GitHub repository:
+Upload these paths into the EXISTING lineguard_landing repository:
 
-/index.html
-/privacy/index.html
-/privacy/es/index.html
-/support/index.html
-/start/index.html
+/index.html            Main LineGuard homepage (restored from GitHub history)
+/start/index.html      QR-code landing page
+/download/index.html   Direct App Store redirect
 
-All other existing assets/CSS/images stay unchanged.
+IMPORTANT:
+Keep the repository's existing styles.css, image files, /start/assets/, /privacy/, /support/,
+and other assets. This ZIP restores/adds only the three requested routes.
 
-Updates:
-- Adds Transcendence Ventures LLC to the main footer.
-- States that LineGuard is developed and operated by Transcendence Ventures LLC on legal/support pages.
-- Adds the LLC to the /start/ footer.
-- Keeps the existing LineGuard design and current App Store URL.
+Expected URLs:
+https://lineguardapp.com/
+https://lineguardapp.com/start/
+https://lineguardapp.com/download/
