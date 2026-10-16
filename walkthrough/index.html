@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf8ff">
+  <meta name="description" content="Watch a two-minute walkthrough of the LineGuard app: device setup, care reminders, timeline, troubleshooting guides, and photo log.">
+  <meta property="og:title" content="LineGuard App Walkthrough">
+  <meta property="og:description" content="A two-minute video tour of LineGuard: practical device-care information, reminders, photo tracking, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lineguardapp.com/walkthrough/poster.jpg">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <title>App Walkthrough | LineGuard</title>
+  <style>
+    :root{
+      --purple:#6d48c7;--purple-dark:#4f3299;--purple-soft:#f1ebff;
+      --ink:#27243a;--muted:#6f6b7b;--line:#e9e3f2;--bg:#faf8ff;
+      --shadow:0 18px 55px rgba(69,47,110,.10);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    body{min-height:100vh;background:radial-gradient(circle at 15% 12%,rgba(144,108,223,.13),transparent 28rem),radial-gradient(circle at 92% 24%,rgba(204,179,255,.18),transparent 25rem),var(--bg)}
+    a{color:inherit}
+    .wrap{width:min(960px,calc(100% - 30px));margin:0 auto;padding:28px 0 46px}
+    .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .brand-logo{width:52px;height:52px;object-fit:contain;display:block;flex:0 0 auto}
+    .brand-name{display:block;font-size:30px;font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--purple-dark)}
+    .home{font-size:14px;color:var(--muted);text-decoration:none}
+    .card{background:rgba(255,255,255,.88);border:1px solid rgba(109,72,199,.10);box-shadow:var(--shadow);border-radius:28px;padding:34px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:var(--purple-soft);color:var(--purple-dark);font-size:12px;font-weight:750;letter-spacing:.02em;margin-bottom:18px}
+    h1{font-size:clamp(34px,6.5vw,56px);line-height:1;letter-spacing:-.05em;margin:0 0 16px;max-width:700px}
+    .lead{font-size:18px;line-height:1.55;color:var(--muted);margin:0 0 26px;max-width:680px}
+    .player{background:#000;border-radius:22px;overflow:hidden;box-shadow:0 18px 45px rgba(46,37,82,.25)}
+    video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+    h2{font-size:20px;letter-spacing:-.02em;margin:30px 0 12px}
+    .chapters{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;padding:0;margin:0;list-style:none}
+    .chapters button{width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;font:inherit;font-size:14.5px;color:var(--ink);cursor:pointer;display:flex;gap:10px;align-items:baseline;transition:border-color .15s ease,background .15s ease}
+    .chapters button:hover,.chapters button:focus-visible{border-color:var(--purple);outline:none}
+    .chapters button.on{border-color:var(--purple);background:var(--purple-soft)}
+    .t{font-size:12px;font-weight:750;color:var(--purple);min-width:36px}
+    .actions{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:30px}
+    .btn{min-height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:760;font-size:16px;transition:transform .16s ease}
+    .btn:active{transform:scale(.985)}
+    .primary{color:#fff;background:linear-gradient(135deg,var(--purple),var(--purple-dark));box-shadow:0 12px 24px rgba(109,72,199,.22)}
+    .secondary{color:var(--purple-dark);background:var(--purple-soft);border:1px solid #e4dafc}
+    .medical{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:11.5px;line-height:1.5;color:#817d8a}
+    footer{padding:21px 4px 0;display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:center;color:#817d8a;font-size:12px}
+    footer a{text-decoration:none}
+    @media(max-width:560px){.wrap{width:min(100% - 20px,960px);padding-top:18px}.top{margin-bottom:18px}.card{padding:22px 16px;border-radius:23px}.lead{font-size:16px}.actions{grid-template-columns:1fr}.home{display:none}.player{border-radius:16px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="top">
+      <a class="brand" href="/" aria-label="LineGuard home">
+        <img class="brand-logo" src="/lineguard-logo.png" alt="LineGuard logo">
+        <span class="brand-name">LineGuard</span>
+      </a>
+      <a class="home" href="/">lineguardapp.com</a>
+    </div>
+    <section class="card">
+      <div class="eyebrow">APP WALKTHROUGH</div>
+      <h1>See LineGuard in action.</h1>
+      <p class="lead">A two-minute tour of the app: device setup, care reminders, the daily checklist, the device timeline, troubleshooting guides, and the photo log.</p>
+
+      <div class="player">
+        <video id="v" controls playsinline preload="metadata" poster="poster.jpg">
+          <source src="lineguard-walkthrough.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="lineguard-walkthrough.mp4">Download the video</a>.
+        </video>
+      </div>
+
+      <h2>Jump to a section</h2>
+      <ul class="chapters" id="ch"></ul>
+
+      <div class="actions">
+        <a class="btn primary" href="https://apps.apple.com/us/app/lineguardapp/id6782687697" rel="noopener">View LineGuard on the App Store</a>
+        <a class="btn secondary" href="/">Explore LineGuard</a>
+      </div>
+
+      <div class="medical">LineGuard provides general educational information and organizational tools. It does not provide medical diagnoses or replace professional medical advice. Always follow instructions from your treating healthcare professionals and the manufacturer of your specific medical device. Entries in the app are not sent to your care team, and the app does not monitor for emergencies. For a medical emergency, call 911 or your local emergency service.</div>
+    </section>
+    <footer>
+      <span>© 2026 Transcendence Ventures LLC · LineGuard</span>
+      <a href="/privacy/">Privacy</a>
+      <a href="/support/">Support</a>
+      <a href="mailto:hello@lineguardapp.com">hello@lineguardapp.com</a>
+    </footer>
+  </main>
+  <script>
+    var chapters=[[4,"Choose your device"],[9,"Starter care reminders"],[15,"Care team phone number"],[21,"Instructions and preferences"],
+    [28,"Meet the device (tour)"],[34,"What to protect and watch for"],[45,"Today checklist"],[55,"My Devices"],
+    [60,"Log events on the timeline"],[67,"Timeline and schedules"],[76,"Troubleshoot by device"],[82,"Clear explanations"],
+    [88,"Step-by-step problem guidance"],[98,"Call Care Team in one tap"],[103,"Photo log"]];
+    var v=document.getElementById('v'),ul=document.getElementById('ch'),btns=[];
+    function fmt(s){return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2)}
+    chapters.forEach(function(c){
+      var li=document.createElement('li'),b=document.createElement('button');
+      b.type='button';
+      b.innerHTML='<span class="t">'+fmt(c[0])+'</span><span>'+c[1]+'</span>';
+      b.onclick=function(){v.currentTime=c[0];v.play();v.scrollIntoView({behavior:'smooth',block:'center'})};
+      li.appendChild(b);ul.appendChild(li);btns.push(b);
+    });
+    v.addEventListener('timeupdate',function(){
+      var cur=-1;chapters.forEach(function(c,i){if(v.currentTime>=c[0])cur=i});
+      btns.forEach(function(b,i){b.classList.toggle('on',i===cur)});
+    });
+  </script>
+</body>
+</html>
